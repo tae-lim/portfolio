@@ -104,11 +104,18 @@ nav {
 }
 
 /* Skills */
-#skills-container{
-  display: flex;
-  justify-content: space-between;
+#skills-container {
+  width: 100%;
+  height: 320px;
+  padding-top: 10px;
 }
 
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 512px;
+  height: 512px;
+}
 
 /* Portfolio */
 #portfolio-container {
