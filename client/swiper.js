@@ -4,14 +4,15 @@ const swiper = new Swiper('.swiper-container', {
   centeredSlides: true,
   slidesPerView: 4,
   coverflowEffect: {
-    rotate: 50,
+    rotate: 0,
     stretch: 0,
     depth: 100,
     modifier: 1,
-    slideShadows : true,
+    slideShadows : false,
   },
   pagination: {
     el: '.swiper-pagination',
+    clickable: true,
   },
   navigation: {
     nextEl: '.swiper-button-next',
