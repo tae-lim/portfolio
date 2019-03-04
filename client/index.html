@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
     <!--JS Index-->
     <script src="./index.js"></script>
+    <!--TypeIt-->
+    <script src="https://cdn.jsdelivr.net/npm/typeit@6/dist/typeit.min.js"></script>
     <!--Swiper-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
@@ -23,7 +25,7 @@
       <nav>
         <a class="internal-link" href="#about-container">About</a>
         <span class="link-divide">|</span>
-        <a href="swiper-container">Skills</a>
+        <a href="#skills-container">Skills</a>
         <span class="link-divide">|</span>
         <a href="#portfolio-container">Portfolio</a>
         <span class="link-divide">|</span>
@@ -33,11 +35,11 @@
 
     <!--Basic Info-->
     <section id="about-container">
-      <p class="about-me">Nice to meet you! My name is Tae!</p>
+      <p id="about-me"></p>
     </section>
 
     <!--Skills-->
-    <div class="swiper-container">
+    <div id="skills-container" class="swiper-container">
       <div class="swiper-wrapper">
         <div class="swiper-slide" style="background-image:url(./images/technologies/html.png)"></div>
           <div class="swiper-slide" style="background-image:url(./images/technologies/css.png)"></div>
@@ -99,5 +101,6 @@
     
     <!-- Initialize Swiper -->
     <script src="./swiper.js"></script>
+    <script src="./typeit.js"></script>
   </body>
 </html>

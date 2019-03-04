@@ -95,7 +95,7 @@ nav {
   border: 1px solid black;
 }
 
-.about-me {
+#about-me {
   display: flex;
   color: white;
   font-size: 46px;
