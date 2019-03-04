@@ -89,33 +89,50 @@ nav {
   align-items: center;
   justify-content: center;
   /* Need to make height responsive */
-  height: 350px;
+  height: 460px;
   background: url("/client/images/majestic.jpg");
-  width: 100%;
+  background-size: 100%;
   border: 1px solid black;
-  
 }
 
 .about-me {
+  display: flex;
   color: white;
-  font-size: 20px;
+  font-size: 46px;
   font-family: Helvetica;
   text-align: center;
+  border: 1px solid black;
+  height: 300px;
+  width: 33%;
+  align-items: center;
 }
 
 /* Skills */
 #skills-container {
   width: 100%;
-  height: 320px;
-  padding-top: 10px;
+  height: 216px;
+  border: 1px solid black;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: 128px 128px;
+  width: 300px;
+  height: 300px;
+  background-repeat: no-repeat; 
+} 
+
+
+/* #skills-container {
+  width: 100%;
 }
 
 .swiper-slide {
   background-position: center;
   background-size: cover;
-  width: 512px;
-  height: 512px;
-}
+  width: 100%;
+  height: 128px;
+} */
 
 /* Portfolio */
 #portfolio-container {
@@ -137,3 +154,12 @@ nav {
 }
 
 /* Contact */
+.contact-info {
+  display: flex;
+  justify-content: space-around;
+}
+
+.contact-info > a {
+  border: 1px solid black;
+  border-radius: 100%;
+}

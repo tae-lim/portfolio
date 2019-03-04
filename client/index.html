@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Tae Lim Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <link rel="stylesheet" type="text/css" href="./stylesheet.css">
     <!--Google Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Monoton|Aleo" rel="stylesheet">
@@ -12,8 +13,6 @@
     <script src="./index.js"></script>
     <!--Swiper-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
-    
   </head>
   <body>
     <!--Header-->
@@ -32,14 +31,14 @@
 
     <!--Basic Info-->
     <section id="about-container">
-      <p class="about-me">Nice to meet you! My name is Tae and I'm a Software Developer! with experience developing full stack applications</p>
+      <p class="about-me">Nice to meet you! My name is Tae!</p>
     </section>
 
     <!--Skills-->
     <section id="skills-container">
       <div class="swiper-wrapper">
         <div class="swiper-slide" style="background-image:url(./images/technologies/html.png)"></div>
-        <div class="swiper-slide" style="background-image:url(./images/technologies/css.jpg)"></div>
+        <div class="swiper-slide" style="background-image:url(./images/technologies/css.png)"></div>
         <div class="swiper-slide" style="background-image:url(./images/technologies/javascript.png)"></div>
         <div class="swiper-slide" style="background-image:url(./images/technologies/react.png)"></div>
         <div class="swiper-slide" style="background-image:url(./images/technologies/redux.png)"></div>
@@ -84,7 +83,7 @@
     <!--Contact-->
     <footer id="contact-container">
       <span>Let's Chat</span>
-      <nav>
+      <nav class="contact-info">
         <a href="https://www.linkedin.com/in/tae-lim" target="_blank">LinkedIn</a>
         <a href="https://www.github.com/tae-lim" target="_blank">Github</a>
         <a href="#">Resume</a>
@@ -92,6 +91,10 @@
       </nav>
       <span>&copy 2019 Tae Lim</span>
     </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+
     <!-- Initialize Swiper -->
     <script src="./swiper.js"></script>
   </body>

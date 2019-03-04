@@ -1,8 +1,8 @@
-var swiper = new Swiper('#skills-container', {
+const swiper = new Swiper('#skills-container', {
   effect: 'coverflow',
   grabCursor: true,
   centeredSlides: true,
-  slidesPerView: '3',
+  slidesPerView: 4,
   coverflowEffect: {
     rotate: 50,
     stretch: 0,
