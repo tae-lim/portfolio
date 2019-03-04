@@ -108,31 +108,16 @@ nav {
 }
 
 /* Skills */
-#skills-container {
+.swiper-container {
   width: 100%;
-  height: 216px;
+  height: 230px;
   border: 1px solid black;
 }
-
 .swiper-slide {
   background-position: center;
   background-size: 128px 128px;
-  width: 300px;
-  height: 300px;
-  background-repeat: no-repeat; 
-} 
-
-
-/* #skills-container {
-  width: 100%;
+  background-repeat: no-repeat;
 }
-
-.swiper-slide {
-  background-position: center;
-  background-size: cover;
-  width: 100%;
-  height: 128px;
-} */
 
 /* Portfolio */
 #portfolio-container {

@@ -1,4 +1,4 @@
-const swiper = new Swiper('#skills-container', {
+const swiper = new Swiper('.swiper-container', {
   effect: 'coverflow',
   grabCursor: true,
   centeredSlides: true,
@@ -14,5 +14,3 @@ const swiper = new Swiper('#skills-container', {
     el: '.swiper-pagination',
   },
 });
-
-console.log(swiper);
