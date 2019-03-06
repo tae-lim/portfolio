@@ -48,13 +48,51 @@ table {
 }
 
 /* General */
-h2 {
-  font-weight: bold;
-  font-family: Arial;
+html { 
+  font-size: 1em; 
 }
 
-h3 {
+h1 { 
+  font-size: 3.8em; 
+}
+
+h2 { 
+  font-size: 1.8em;
+  font-family: "Merriweather Sans";
+  font-weight: bold;
+}
+
+h3 { 
+  font-size: 1.05em;
+  font-family: "Merriweather";
+}
+
+h4 { 
+  font-size: 1.2em; 
+}
+
+small { 
+  font-size: 0.833em; 
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited { 
+  text-decoration: none; 
+  color: rgb(27, 107, 243);
+}
+
+a:hover {
+  color: rgb(114, 60, 150);
+  font-weight: bold;
+}
+
+strong {
+  font-weight: bold;
   font-style: italic;
+  color: red;
 }
 
 /* Header */
@@ -62,14 +100,14 @@ h3 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 10px;
+  color: rgb(27, 107, 243);
 }
 
 .header-name {
   flex: 2;
-  font-size: 48px;
-  font-family: monoton, cursive;
+  font-family: Monoton;
   text-transform: uppercase;
+  font-weight: bold;
 }
 
 /* Navigation */
@@ -78,6 +116,8 @@ nav {
   flex: 1;
   justify-content: space-around;
   align-items: center;
+  font-size: 1.25em;
+  font-family: "Aleo";
 }
 
 /* About */
@@ -85,35 +125,32 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* Need to make height responsive */
-  height: 460px;
+  height: 35.35em;
+  max-width: 100%;
   background: url("/client/images/fish.jpg") no-repeat fixed center center;
-  /* background-size: 100%; */
 }
 
 #about-me {
   display: flex;
-  color: white;
-  font-size: 46px;
-  font-family: Helvetica;
-  text-align: center;
-  border: 1px solid black;
-  height: 300px;
-  width: 33%;
   align-items: center;
+  height: 5em;
+  width: 33%;
+  color: white;
+  font-size: 3em;
+  line-height: 1.2em;
+  font-family: Quattrocento;
 }
 
 /* Skills */
 .swiper-container {
   width: 100%;
-  height: 230px;
-  border: 1px solid black;
-  background-color: rgb(241, 172, 81, 0.9);
+  height: 15em;
+  background-color: rgb(233, 84, 26, 0.9);
   /* rgba(255, 166, 0, 0.836) */
 }
 .swiper-slide {
   background-position: center;
-  background-size: 128px 128px;
+  background-size: 10em 10em;
   background-repeat: no-repeat;
 }
 
@@ -121,8 +158,8 @@ nav {
 #portfolio-container {
   display: flex;
   justify-content: space-around;
-  background-color: rgba(24, 24, 197, 0.836);
-  height: 25em;
+  background-color: rgba(2, 50, 137, 0.9);
+  height: 30em;
 }
 
 .app-wrapper {
@@ -131,9 +168,9 @@ nav {
   flex-basis: 0;
   flex-shrink: 1;
   flex-grow: 1;
-  margin: 5px;
+  margin: 0.7em;
   background-color: white;
-  border: 1px solid black;
+  border: 0.1em solid black;
 }
 
 .app-photo-wrapper {
@@ -150,19 +187,20 @@ nav {
 }
 
 .app-photo-wrapper a {
-  border: 1px solid black;
-  padding: 12px;
+  border: 0.1em solid black;
+  padding: 1em;
   border-radius: 4em;
   color: black;
+  font-family: Nunito;
 }
 
 .app-photo-wrapper a:hover {
-  color: rgba(24, 24, 197, 0.836);
-  border: 1px solid yellow;
+  color: rgba(27, 107, 243);
+  border: 0.1em solid rgba(27, 107, 243);
 }
 
 .app-photo-wrapper:hover img {
-  opacity: 0.4;
+  opacity: 0.2;
 }
 
 .app-photo-wrapper:hover .app-links {
@@ -186,16 +224,23 @@ nav {
   flex-grow: 1;
   flex-direction: column;
   justify-content: space-around;
-  border: 1px solid black;
   padding: 1em;
+}
 
+.app-info h2 {
+  text-align: center;
+}
+
+.app-info p {
+  font-family: Alegreya;
 }
 
 /* Contact */
+
 .contact-info {
   display: flex;
   justify-content: center;
-  height: 100px;
+  height: 7em;
 }
 
 .copyright {
@@ -206,11 +251,11 @@ nav {
 .contact-icon {
   display: flex;
   justify-content: center;
-  width: 50px;
-  height: 50px;
-  margin-left: 10px;
-  margin-right: 10px;
-  border: 1px solid black;
+  width: 2.5em;
+  height: 2.5em;
+  margin-left: 1em;
+  margin-right: 1em;
+  border: 0.1em solid black;
   border-radius: 50%
 }
 
@@ -221,9 +266,13 @@ nav {
 }
 
 svg:hover {
-  fill: blue;
+  fill: rgba(27, 107, 243);
 }
 
 .contact-icon:hover {
-  border: 1px solid royalblue;
+  border: 0.1em solid rgba(27, 107, 243);
+}
+
+.copyright {
+  font-family: Alegreya;
 }
