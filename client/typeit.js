@@ -1,12 +1,12 @@
 const instance = new TypeIt('#about-me', {
-  speed: 70,
-  waitUntilVisible: false,
+  speed: 65,
+  waitUntilVisible: true,
 })
 .type('Hi! I\'m Tae,')
-.pause(1500)
+.pause(1000)
 .break()
 .pause(1000)
-.type('A Software Developer.')
+.type('a Software Developer.')
 .break()
 .pause(1000)
 .type('I love')

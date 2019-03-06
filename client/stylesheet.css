@@ -86,7 +86,6 @@ a:visited {
 
 a:hover {
   color: rgb(114, 60, 150);
-  font-weight: bold;
 }
 
 strong {
@@ -195,8 +194,8 @@ nav {
 }
 
 .app-photo-wrapper a:hover {
-  color: rgba(27, 107, 243);
-  border: 0.1em solid rgba(27, 107, 243);
+  color: rgb(27, 107, 243);
+  border: 0.1em solid rgb(27, 107, 243);
 }
 
 .app-photo-wrapper:hover img {
@@ -243,11 +242,6 @@ nav {
   height: 7em;
 }
 
-.copyright {
-  display: block;
-  text-align: center;
-}
-
 .contact-icon {
   display: flex;
   justify-content: center;
@@ -266,13 +260,15 @@ nav {
 }
 
 svg:hover {
-  fill: rgba(27, 107, 243);
+  fill: rgb(27, 107, 243);
 }
 
 .contact-icon:hover {
-  border: 0.1em solid rgba(27, 107, 243);
+  border: 0.1em solid rgb(27, 107, 243);
 }
 
 .copyright {
+  display: block;
+  text-align: center;
   font-family: Alegreya;
 }
