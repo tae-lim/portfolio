@@ -174,11 +174,32 @@ nav {
   height: 100px;
 }
 
-.contact-info > a {
-  
-}
-
 .copyright {
   display: block;
   text-align: center;
+}
+
+.contact-icon {
+  display: flex;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 1px solid black;
+  border-radius: 50%
+}
+
+.contact-icon a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+svg:hover {
+  fill: red;
+}
+
+.contact-icon:hover {
+  border: 1px solid red;
 }
