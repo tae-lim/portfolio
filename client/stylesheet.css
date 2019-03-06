@@ -155,16 +155,53 @@ nav {
 
 /* TERRIBLE USE OF CSS SELECTORS */
 #portfolio-container > div > div > div > a {
-  border: 1px solid rgb(241, 172, 81, 0.9);
+  border: 1px solid black;
   padding: 12px;
   border-radius: 3.75em;
-  color: rgb(241, 172, 81, 0.9);
+  color: black;
 }
 
 /* TERRIBLE USE OF CSS SELECTORS */
 #portfolio-container > div > div > div > a:hover {
   color: rgba(24, 24, 197, 0.836);
-  border: 1px solid rgba(24, 24, 197, 0.836);
+  border: 1px solid black;
+}
+
+/* why can't i just use .app-wrapper? */
+#portfolio-container .app-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.app-photo-wrapper {
+  position: relative;
+}
+
+.app-photo-wrapper img {
+  display: block;
+  opacity: 1;
+  max-width: 100%;
+  max-height: 100%;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.app-links {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.app-photo-wrapper:hover img {
+  opacity: 0.3;
+}
+
+.app-photo-wrapper:hover .app-links {
+  opacity: 1;
 }
 
 /* Contact */
@@ -197,9 +234,9 @@ nav {
 }
 
 svg:hover {
-  fill: red;
+  fill: blue;
 }
 
 .contact-icon:hover {
-  border: 1px solid red;
+  border: 1px solid royalblue;
 }
